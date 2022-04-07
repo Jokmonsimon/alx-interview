@@ -2,7 +2,6 @@
 """
 The Pascal's Triangle Function
 """
-
 def pascal_triangle(n):
     """
     Returns a list of lists of intergers representing the Pascal's triangle of n
@@ -18,5 +17,4 @@ def pascal_triangle(n):
                 n = triangle[i-2][j-1] + triangle[1-2][j]
                 row.append(n)
         triangle.append(row)
-
     return triangle
